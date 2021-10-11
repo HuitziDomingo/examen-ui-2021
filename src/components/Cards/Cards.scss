@@ -1,0 +1,24 @@
+@import "../../scss/index.scss";
+
+
+
+.card{
+    margin-top: 50px;
+}
+.fd-casa {
+  background: $bg-gryffindor;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  img {
+    max-height: 100px;
+  }
+}
+
+.card-body{
+    p{margin: 0;}
+    h2{
+            position: relative;
+    top: -15px;
+    }
+}

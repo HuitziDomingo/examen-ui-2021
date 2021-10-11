@@ -1,0 +1,43 @@
+@import "../../scss/index.scss";
+
+.fd-black {
+  background: url("../../assets/img/jpg/fondo.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100% 100%;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+/*
+*Titulos de botones
+*/
+.cont-header {
+  margin-top: 100px;
+}
+.cont-title-img {
+ display: grid;
+ justify-content: center;
+ align-content: center;
+}
+
+.title-filtros {
+  text-align: center;
+  color: #fff;
+}
+
+.btn-flex {
+  display: flex;
+  justify-content: center;
+}
+.btn-filter {
+  width: 200px;
+  margin: 12px 30px;
+  padding: 10px 20px;
+  background-color: $btn-normal;
+  color: #fff;
+  border: 1px solid $btn-activo;
+}
+
+
+
