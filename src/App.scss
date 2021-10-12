@@ -4,6 +4,8 @@ body{
     width: 100%;
 }
 
-.fondo{
-    
+.__center{
+   display: grid;
+   justify-content: center;
+   align-items: center; 
 }

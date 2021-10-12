@@ -13,8 +13,8 @@ const CharactersState = ({ children }) => {
     const [state, dispatch] = useReducer(characterReducer, initialState)
 
     //Funciones de la api
-    const getCharacter = async () => {
-        await fetch('http://localhost:4000/hp-characters')
+    const getCharacter = () => {
+        fetch('http://localhost:4000/hp-characters')
             .then(res => res.json())
             .then(data => {
                 dispatch({

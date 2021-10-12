@@ -19,10 +19,11 @@ const Favorites = () => {
             <Affix style={{ position: 'absolute', top: 0, left: 990 }} className="fixedbuttons">
                 <Menu theme="dark" mode="inline">
                     <SubMenu key="sub1" icon={<BookOutlined />} title="FAVORITOS">
-                        <Menu.Item key="1">Option 1</Menu.Item>
-                        <Menu.Item key="2">Option 2</Menu.Item>
-                        <Menu.Item key="3">Option 3</Menu.Item>
-                        <Menu.Item key="4">Option 4</Menu.Item>
+                        <Menu.Item key="1">
+                            <img src="" alt="" />
+                            <p>Nombre del Personaje</p>
+                            <UserAddOutlined />
+                        </Menu.Item>
                     </SubMenu>
                 </Menu>
             </Affix>

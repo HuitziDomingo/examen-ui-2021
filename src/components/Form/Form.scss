@@ -1,0 +1,19 @@
+@import "../../scss/index.scss";
+
+
+.form-group .in-design{
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    background-color: rgba(0,0,0,.05);
+}
+
+
+.ant-modal-footer{
+    display: none;
+}
+
+.__center .btn{
+    background-color: $btn-normal;
+    width: 288px;
+    height: 47px;
+}

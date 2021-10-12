@@ -8,7 +8,7 @@ import harryTitle from '../../assets/img/png/harry.png'
 
 
 //AntDesign
-import { Col, Row, Layout } from 'antd';
+import { Layout } from 'antd';
 
 
 const { Content } = Layout;
