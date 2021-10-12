@@ -4,6 +4,7 @@ import { Menu } from 'antd';
 import { BookOutlined, UserAddOutlined } from '@ant-design/icons';
 import { Affix, Button, Modal } from 'antd';
 import { Form } from '../Form'
+import img from '../../assets/img/jpg/canada.jpg'
 import './Favorites.scss'
 
 const { SubMenu } = Menu;
@@ -19,10 +20,10 @@ const Favorites = () => {
             <Affix style={{ position: 'absolute', top: 0, left: 990 }} className="fixedbuttons">
                 <Menu theme="dark" mode="inline">
                     <SubMenu key="sub1" icon={<BookOutlined />} title="FAVORITOS">
-                        <Menu.Item key="1">
-                            <img src="" alt="" />
-                            <p>Nombre del Personaje</p>
-                            <UserAddOutlined />
+                        <Menu.Item key="1" className="row">
+                            <img src={img} alt="" className="col-md-4 img-fluid" / >
+                            <p className="col-md-4">Nombre del Personaje</p>
+                            <UserAddOutlined className="col-md-4" />
                         </Menu.Item>
                     </SubMenu>
                 </Menu>
