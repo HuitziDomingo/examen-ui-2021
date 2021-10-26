@@ -1,9 +1,9 @@
-import './App.css';
-//components
+import './App.css'
+
 import { Characters } from './components/Characters'
-//ComponentState
-import CharactersState from './context/CharactersState'
-//Estilos
+
+import { DataProvider } from './context/DataContext'
+
 import './App.scss'
 import 'bootstrap/dist/css/bootstrap.min.css'
 
@@ -13,9 +13,9 @@ function App() {
 
   return (
     <div>
-      <CharactersState>
+      <DataProvider>
         <Characters />
-      </CharactersState>
+      </DataProvider>
     </div>
   );
 }
