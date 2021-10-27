@@ -5,8 +5,35 @@
 .card{
     margin-top: 50px;
 }
-.fd-casa {
+.fd-casa-gryffindor {
   background: $bg-gryffindor;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  img {
+    max-height: 100px;
+  }
+}
+.fd-casa-slytherin {
+  background: $bg-slytherin;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  img {
+    max-height: 100px;
+  }
+}
+.fd-casa-hufflepuff {
+  background: $bg-hufflepuff;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  img {
+    max-height: 100px;
+  }
+}
+.fd-casa-ravenclaw {
+  background: $bg-ravenclaw;
   display: grid;
   justify-content: center;
   align-content: center;

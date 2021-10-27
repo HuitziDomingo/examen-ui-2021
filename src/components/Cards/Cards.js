@@ -21,6 +21,18 @@ const Cards = () => {
         loadCharacters()
     }, [])
 
+    //Saber color de la casa de cada personaje
+    const bgHouse = (color) => {
+        if (color === 'Gryffindor') return "fd-casa-gryffindor"
+        else if (color === 'Slytherin')
+            return "fd-casa-slytherin"
+        else if (color === 'Hufflepuff')
+            return "fd-casa-hufflepuff"
+        else if (color === 'Ravenclaw')
+            return "fd-casa-ravenclaw"
+        else return "fd-casa-gryffindor"
+    }
+
     return (
         <div className="container">
             <div className="row">
@@ -30,7 +42,7 @@ const Cards = () => {
                         <div className="col-md-6" key={character.id}>
                             <div className="card mb-3" >
                                 <div className="row g-0">
-                                    <div className="col-md-4 fd-casa">
+                                    <div className={`col-md-4 ${bgHouse(character.house)}`}>
                                         <img className="title-harry img-fluid rounded-circle" src={character.image} alt="" />
                                     </div>
                                     <div className="col-md-8">
@@ -48,7 +60,7 @@ const Cards = () => {
                                             </div>
                                             <h2>{character.name}</h2>
                                             <p className="card-text">Cumpleaños: <small className="text-muted">{character.dateOfBirth ? character.dateOfBirth : 'Desconocido'}</small></p>
-                                            <p className="card-text">Genero: <small className="text-muted">{character.gender}</small></p>
+                                            <p className="card-text">Genero: <small className="text-muted">{character.gender.toUpperCase()}</small></p>
                                             <p className="card-text">Color de ojos: <small className="text-muted">{character.eyeColour}</small></p>
                                             <p className="card-text">Color de pelo: <small className="text-muted">{character.hairColour}</small></p>
                                         </div>
